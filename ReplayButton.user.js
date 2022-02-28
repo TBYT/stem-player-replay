@@ -33,27 +33,38 @@
                 {
                     count++;
                     var button = document.createElement('button');
-                    button.addEventListener("click", function () {
-                        loadAgain();
-                    });
-                    button.id = 'ReplayButton';
-                    button.className = 'button button--text';
-                    button.type = 'button';
-                    document.getElementsByClassName("track-play__landing")[0].appendChild(button);
+                        button.addEventListener("click", function () {
+                            loadAgain();
+                        });
+                        button.id = 'ReplayButton';
+                        button.className = 'button button--text';
+                        button.type = 'button';
+                        document.getElementsByClassName("track-play__landing")[0].appendChild(button);
 
-                    var span = document.createElement('span');
-                    span.className = 'button__text';
-                    span.innerHTML = '[ REPLAY BY TBYT ]';
-                    span.id = 'ReplayButtonSpan';
-                    document.getElementById('ReplayButton').appendChild(span);
+                        var span = document.createElement('span');
+                        span.className = 'button__text';
+                        span.innerHTML = '[ REPLAY BY TBYT ]';
+                        span.id = 'ReplayButtonSpan';
+                        document.getElementById('ReplayButton').appendChild(span);
                 }
-                if(document.getElementById("ReplayButton").disabled==false)
-                    { document.getElementsByClassName("track-play__play-button")[0].disabled = true; }
+                let plytxt = document.getElementsByClassName("track-play__play-button")[0].getElementsByClassName("button__text")[0].innerHTML;
+                if(((parseInt(plytxt.substring(plytxt.indexOf(":")+1,plytxt.indexOf(":")+3)))+(parseInt(plytxt.substring(plytxt.indexOf(":")-2,plytxt.indexOf(":"))))==0)||document.getElementById("ReplayButtonSpan").innerHTML=="[ REPLAY IS ACTIVE ]")
+                {
+                        document.getElementById("ReplayButton").disabled=true;
+                }
+                else {
+                    document.getElementById("ReplayButton").disabled=false; 
+                    if(document.getElementById("ReplayButtonSpan").innerHTML=="[ REPLAY BY TBYT ]")
+                    {
+                        document.getElementsByClassName("track-play__play-button")[0].disabled = true;
+                    }}
+                
             }
         }
         //Track is not in visibility.
         catch(err)
         {
+            
             //reset count to 0 because we are on a page that does not have information.
             count = 0;
         }
