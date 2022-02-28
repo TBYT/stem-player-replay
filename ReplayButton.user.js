@@ -44,7 +44,7 @@
                         span.class = 'button__text';
                         span.innerHTML = '[ REPLAY by TBYT ]';
                         document.getElementById('ReplayButton').appendChild(span);
-                    },5000);
+                    },2500);
                 }
             }
         }
