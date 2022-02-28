@@ -12,7 +12,6 @@
 
 (function() {
     'use strict';
-
     var count = 0;
     setInterval(function()
     {
@@ -29,6 +28,7 @@
         {
             if(document.getElementsByClassName("track-play__track-info")[0].getElementsByTagName('p').length!=0)
             {
+                //count condition in place to generate only 1 button each time we're on a track.
                 if (count == 0)
                 {
                     count++;
@@ -47,12 +47,16 @@
                         span.class = 'button__text';
                         span.innerHTML = '[ REPLAY BY TBYT ]';
                         document.getElementById('ReplayButton').appendChild(span);
-                    },2500);
+                    },2000);
                 }
             }
         }
         //Track is not in visibility.
-        catch(err){ count = 0; }
+        catch(err)
+        {
+            //reset count to 0 because we are on a page that does not have information.
+            count = 0; 
+        }
     },0);
     //end of script
 })();
