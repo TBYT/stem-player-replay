@@ -39,12 +39,12 @@
                             loadAgain();
                         });
                         button.id = 'ReplayButton';
-                        button.class = 'button button--text';
+                        button.className = 'button button--text';
                         button.type = 'button';
                         document.getElementsByClassName("track-play__landing")[0].appendChild(button);
 
                         var span = document.createElement('span');
-                        span.class = 'button__text';
+                        span.className = 'button__text';
                         span.innerHTML = '[ REPLAY BY TBYT ]';
                         document.getElementById('ReplayButton').appendChild(span);
                     },2000);
