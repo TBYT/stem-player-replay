@@ -4,8 +4,8 @@
 // @version      0.1
 // @description  Replay Button for the stemplayer tracks on their website. Please wait until the site is loaded to press replay button. The website will load the track but takes time to do so (about 2 to 6 seconds), this is a discrepancy on stemplayer.com's part.
 // @author       TBYT
-// @match        https://www.stemplayer.com/*
-// @match        https://www.kanyewest.com/*
+// @match        https://www.stemplayer.com/connect/stem/tracks
+// @match        https://www.stemplayer.com/connect/stem/tracks
 // @icon         https://www.stemplayer.com/favicon.ico
 // @grant        none
 // ==/UserScript==
