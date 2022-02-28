@@ -27,7 +27,7 @@
         }
         try
         {
-            if(document.getElementsByClassName("track-play__track-info")[0].getElementsByTagName('p').length!=0)
+            if(document.getElementsByClassName("track-play__play-button")[0].value=="")
             {
                 if(reactivatebtn == 0)
                 { document.getElementsByClassName("track-play__play-button")[0].disabled = true; }
