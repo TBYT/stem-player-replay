@@ -27,6 +27,7 @@
             script.id = "replayScript";
             document.head.appendChild(script);
         }
+        else { insert = 0; }
         try
         {
             if(document.getElementsByClassName("track-play__track-info")[0].getElementsByTagName('p').length!=0)
