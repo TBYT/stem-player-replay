@@ -1,4 +1,4 @@
-/* This the line 27 value of the ogreplayscript variable (Original Replay Script) from https://github.com/TBYT/stem-player-replay/blob/main/ReplayButton.user.js*/
+/* This the line 17 value of the ogreplayscript variable (Original Replay Script) from https://github.com/TBYT/stem-player-replay/blob/main/ReplayButton.user.js*/
 /* Look at this for reference only! */
 
 //Variable here just so it only automatically presses the play button once.
