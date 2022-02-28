@@ -5,6 +5,10 @@ This is a discrepancy on stemplayer.com's part where it takes (about 2 to 6 seco
 Once you see how long the track is ("not 0 seconds"), you can safely press the replay button.
 This repository contains the source of my replay script for stem player website.
 
+## Prerequisites
+You will need to connect a stem player to https://stemplayer.com first!
+How you come about a solution for connecting a stemplayer to the website is not up to me.
+
 ## Tutorial
 (COMING SOON)
 If you prefer a video tutorial you can see mine [here](https://www.youtube.com/watch?v=)
