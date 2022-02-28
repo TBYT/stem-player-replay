@@ -1,8 +1,5 @@
 # Stem Player Replay
 Replay Button for the stemplayer tracks on their website. Pressing it once will automatically replay a track when it ends.
-Please wait until the track is fully loaded, to press replay button. 
-This is a discrepancy on stemplayer.com's part where it takes (about 2 to 6 seconds) to load the track.
-Once you see how long the track is ("not 0 seconds"), you can safely press the replay button.
 This repository contains the source of my replay script for stem player website.
 
 ## Prerequisites
