@@ -13,7 +13,6 @@
 (function() {
     'use strict';
     var count = 0;
-    var reactivatebtn = 0;
     setInterval(function()
     {
         if(document.getElementById("replayScript")==null)
@@ -29,7 +28,7 @@
         {
             if(document.getElementsByClassName("track-play__play-button")[0].value=="")
             {
-                if(reactivatebtn == 0)
+                if(document.getElementById("replayScript").disabled==false)
                 { document.getElementsByClassName("track-play__play-button")[0].disabled = true; }
                 //count condition in place to generate only 1 button each time we're on a track.
                 if (count == 0)
@@ -39,7 +38,6 @@
                     {
                         var button = document.createElement('button');
                         button.addEventListener("click", function () {
-                            reactivatebtn = 1;
                             loadAgain();
                         });
                         button.id = 'ReplayButton';
@@ -60,7 +58,7 @@
         catch(err)
         {
             //reset count to 0 because we are on a page that does not have information.
-            count = 0; reactivatebtn = 0;
+            count = 0;
         }
     },0);
     //end of script
