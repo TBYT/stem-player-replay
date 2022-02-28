@@ -42,7 +42,7 @@
 
                         var span = document.createElement('span');
                         span.class = 'button__text';
-                        span.innerHTML = '[ REPLAY by TBYT ]';
+                        span.innerHTML = '[ REPLAY BY TBYT ]';
                         document.getElementById('ReplayButton').appendChild(span);
                     },2500);
                 }
