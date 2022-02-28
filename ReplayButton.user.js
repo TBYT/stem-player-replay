@@ -28,7 +28,7 @@
         {
             if(document.getElementsByClassName("track-play__play-button")[0].value=="")
             {
-                if(document.getElementById("replayScript").disabled==false)
+                if(document.getElementById("ReplayButton").disabled==false)
                 { document.getElementsByClassName("track-play__play-button")[0].disabled = true; }
                 //count condition in place to generate only 1 button each time we're on a track.
                 if (count == 0)
