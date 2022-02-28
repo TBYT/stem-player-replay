@@ -1,4 +1,4 @@
-/* This the line 17 value of the ogreplayscript variable (Original Replay Script) from https://github.com/TBYT/stem-player-replay/blob/main/ReplayButton.user.js*/
+/* This the line 20 value of the ogreplayscript variable (Original Replay Script) from https://github.com/TBYT/stem-player-replay/blob/main/ReplayButton.user.js*/
 /* Look at this for reference only! */
 
 //Variable here just so it only automatically presses the play button once.
@@ -25,6 +25,9 @@ setInterval(function()
                 if (replay==0) 
                 {
                     plybtn.click();
+                    //line 29 and 30 are valid because the main file inserted a button and span with these id's in the document.
+                    document.getElementById("ReplayButton").disabled=true;
+                    document.getElementById("ReplayButtonSpan").innerHTML="[ REPLAY IS ACTIVE ]";
                     replay++; 
                 }
             }
