@@ -24,6 +24,8 @@ setInterval(function()
             {
                 if (replay==0) 
                 {
+                    //was disabled in the first place because the replay button needs to be pressed first for this to work.
+                    plybtn.disabled=false;
                     plybtn.click();
                     //line 29 and 30 are valid because the main file inserted a button and span with these id's in the document.
                     document.getElementById("ReplayButton").disabled=true;
