@@ -48,7 +48,8 @@
                 }
             }
         }
-        catch(err){ count = 0; console.log("[REPLAYBUTTON] Track is not in visibility."); }
+        //Track is not in visibility.
+        catch(err){ count = 0; }
     },0);
     //end of script
 })();
