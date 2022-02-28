@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Replay Button for Stemplayer.com
 // @namespace    https://www.stemplayer.com/
-// @version      0.4
+// @version      0.5
 // @description  Replay Button for the stemplayer tracks on their website. Please wait until the site is loaded to press replay button. The website will load the track but takes time to do so (about 2 to 6 seconds), this is a discrepancy on stemplayer.com's part.
 // @author       TBYT
 // @match        https://www.kanyewest.com/*
