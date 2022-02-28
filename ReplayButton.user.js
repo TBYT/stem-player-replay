@@ -28,30 +28,27 @@
         {
             if(document.getElementsByClassName("track-play__play-button")[0].value=="")
             {
-                if(document.getElementById("ReplayButton").disabled==false)
-                { document.getElementsByClassName("track-play__play-button")[0].disabled = true; }
                 //count condition in place to generate only 1 button each time we're on a track.
                 if (count == 0)
                 {
                     count++;
-                    setTimeout(function()
-                    {
-                        var button = document.createElement('button');
-                        button.addEventListener("click", function () {
-                            loadAgain();
-                        });
-                        button.id = 'ReplayButton';
-                        button.className = 'button button--text';
-                        button.type = 'button';
-                        document.getElementsByClassName("track-play__landing")[0].appendChild(button);
+                    var button = document.createElement('button');
+                    button.addEventListener("click", function () {
+                        loadAgain();
+                    });
+                    button.id = 'ReplayButton';
+                    button.className = 'button button--text';
+                    button.type = 'button';
+                    document.getElementsByClassName("track-play__landing")[0].appendChild(button);
 
-                        var span = document.createElement('span');
-                        span.className = 'button__text';
-                        span.innerHTML = '[ REPLAY BY TBYT ]';
-                        span.id = 'ReplayButtonSpan';
-                        document.getElementById('ReplayButton').appendChild(span);
-                    },2000);
+                    var span = document.createElement('span');
+                    span.className = 'button__text';
+                    span.innerHTML = '[ REPLAY BY TBYT ]';
+                    span.id = 'ReplayButtonSpan';
+                    document.getElementById('ReplayButton').appendChild(span);
                 }
+                if(document.getElementById("ReplayButton").disabled==false)
+                    { document.getElementsByClassName("track-play__play-button")[0].disabled = true; }
             }
         }
         //Track is not in visibility.
