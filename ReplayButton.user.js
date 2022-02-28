@@ -13,6 +13,7 @@
 (function() {
     'use strict';
     var count = 0;
+    var reactivatebtn = 0;
     setInterval(function()
     {
         if(document.getElementById("replayScript")==null)
@@ -28,15 +29,17 @@
         {
             if(document.getElementsByClassName("track-play__track-info")[0].getElementsByTagName('p').length!=0)
             {
+                if(reactivatebtn == 0)
+                { document.getElementsByClassName("track-play__play-button")[0].disabled = true; }
                 //count condition in place to generate only 1 button each time we're on a track.
                 if (count == 0)
                 {
                     count++;
-                    document.getElementsByClassName("track-play__play-button")[0].disabled = true;
                     setTimeout(function()
                     {
                         var button = document.createElement('button');
                         button.addEventListener("click", function () {
+                            reactivatebtn = 1;
                             loadAgain();
                         });
                         button.id = 'ReplayButton';
@@ -57,7 +60,7 @@
         catch(err)
         {
             //reset count to 0 because we are on a page that does not have information.
-            count = 0; 
+            count = 0; reactivatebtn = 0;
         }
     },0);
     //end of script
