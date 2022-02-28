@@ -6,6 +6,8 @@
 // @author       TBYT
 // @match        https://www.kanyewest.com/connect/stem/tracks
 // @match        https://www.stemplayer.com/connect/stem/tracks
+// @match        https://www.kanyewest.com
+// @match        https://www.stemplayer.com
 // @icon         https://www.stemplayer.com/favicon.ico
 // @grant        none
 // ==/UserScript==
