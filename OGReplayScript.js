@@ -1,6 +1,6 @@
 /* This the line 20 value of the ogreplayscript variable (Original Replay Script) from https://github.com/TBYT/stem-player-replay/blob/main/ReplayButton.user.js*/
 /* Look at this for reference only! */
-
+function loadAgain() {
 //Variable here just so it only automatically presses the play button once.
 var replay = 0; //here just so it only automatically presses the play button once.
 //Value will be '[ PLAY 02:20 ]';
@@ -11,10 +11,13 @@ let numvar2 = parseInt(txtvar1.substring(txtvar1.indexOf(":")+1,txtvar1.indexOf(
 let numvar1 = parseInt(txtvar1.substring(txtvar1.indexOf(":")-2,txtvar1.indexOf(":")));
 //convert and sum up the track length into seconds.
 var finaltracklength = (((numvar1*60)+numvar2));
-
+//console.log("track length: "+finaltracklength);
 setInterval(function() 
 {
-        //constantly monitoring track time left until replay.
+        //this if check fixes the constant check of a variable when not in view of track since this script is still inside the html.
+        if(document.getElementsByClassName("track-play__play-button").length>0)
+        {
+            //constantly monitoring track time left until replay.
             var plybtn = document.getElementsByClassName("track-play__play-button")[0];
             let txt1 = plybtn.getElementsByClassName("button__text")[0].innerHTML;
             let num2 = parseInt(txt1.substring(txt1.indexOf(":")+1,txt1.indexOf(":")+3));
@@ -34,4 +37,6 @@ setInterval(function()
                 }
             }
             else { replay = 0; }
+        }
 },0);
+}
