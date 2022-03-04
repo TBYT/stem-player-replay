@@ -86,7 +86,7 @@
                                 button.id = 'ReplayButton1';
                                 button.className = 'button button--text';
                                 button.type = 'button';
-                                document.getElementsByClassName("stem-upload")[0].appendChild(button);
+                                document.getElementsByClassName("stem-upload__buttons")[0].appendChild(button);
 
                                 var span = document.createElement('span');
                                 span.className = 'button__text';
