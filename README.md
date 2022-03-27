@@ -3,7 +3,7 @@ Replay Button for the stemplayer tracks on their website. Pressing it once will 
 This repository contains the source of my replay script for stem player website.
 
 ## Prerequisites
-You will need to connect a stem player to https://stemplayer.com first!
+You will need to connect a stem player to https://stemplayer.com or login with your purchase email on https://stemplayer.com.
 How you come about a solution for connecting a stemplayer to the website is not up to me.
 
 ## Tutorial
